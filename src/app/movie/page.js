@@ -1,6 +1,7 @@
 import React from 'react';
 import MovieCard from "@/app/components/MovieCard";
 import styles from "@/app/styles/common.module.css"
+import axios  from 'axios'
 
 const Movie = async () => {
 
@@ -8,20 +9,24 @@ const Movie = async () => {
 
 
     const url = process.env.RAPID_KEY;
-
+    
+    
     const options = {
         method: 'GET',
         headers: {
-            'X-RapidAPI-Key': 'c02fbc68bcmshbcf86db29a2c655p12007cjsn9adea8d51505',
-            'X-RapidAPI-Host': 'netflix54.p.rapidapi.com'
+          'content-type': 'application/octet-stream',
+          'X-RapidAPI-Key': '5ec5eeb711msh8497b6d93141a80p173c80jsn9028150ca114',
+          'X-RapidAPI-Host': 'netflix54.p.rapidapi.com'
         }
-    };
-
-    const res = await fetch(url, options);
+      };
+      
+     const res = await fetch(url, options);
+    
     const data = await res.json();
     const main_data = data.titles;
     console.log(main_data.jawSummary)
 
+    
     return (
         <>
             <section className={styles.movieSection}>

@@ -18,9 +18,10 @@ const Herosection = ({title, imageUrl}) => {
                 <div className={styles.grid_two_section}>
                     <div className={heroStyles.hero_content}>
                         <h1>{title}</h1>
-                        <p> From award-winning dramas to blockbuster action movies, we&apos;ve got you covered. Browse
-                            our
-                            selection of the latest and greatest movies, and find your new favorite today.
+                        <p> Welcome to the Geek CV website This is Abhishek 
+                            I am a student of Bca I have created website for you Here you will find a lot of video on latest technology, Coding, Mobile, computer..etc.the letest news from tech world. This website will give knowledge of computer science Thank you
+
+
                         </p>
                         <Link href="/movie">
                             <button className={mulish.className}>

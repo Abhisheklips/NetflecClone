@@ -1,6 +1,7 @@
 import React from 'react';
 import footerStyles from '@/app/styles/footer.module.css'
-import { FaFacebookF, FaTwitter,FaInstagram,FaLinkedinIn,FaYoutube } from "react-icons/fa";
+import { FaFacebookF, FaTwitter,FaInstagram,FaLinkedinIn,FaYoutube, FaGithub, FaImdb} from "react-icons/fa";
+// import {BsGithub} from  'react-icons/bs'
 import Link from "next/link";
 
 
@@ -17,14 +18,16 @@ const Footer = () => {
                     <div className={footerStyles.top}>
                         <div className={footerStyles['logo-details']}>
                             {/*<i className={footerStyles.fab fa-slack]></i>*/}
-                            <span className={footerStyles.logo_name}>Thapa Technical</span>
+                            <span className={footerStyles.logo_name}>Geek CV</span>
                         </div>
                         <div className={footerStyles[`media-icons`]}>
-                            <Link href="#"><i > <FaFacebookF/> </i></Link>
-                            <Link href="#"><i > <FaTwitter/> </i> </Link>
-                            <Link href="https://www.instagram.com/thapatechnical/" target="_blank"><i > <FaInstagram/>  </i></Link>
-                            <Link href="#"><i > <FaLinkedinIn /> </i></Link>
-                            <Link href="#"><i > <FaYoutube />  </i></Link>
+                            {/* <Link href="#"><i > <FaFacebookF/> </i></Link>*/}
+                            <Link href="https://imdbabhi.vercel.app/"><i > <FaImdb/> </i> </Link>
+                            <Link href="https://github.com/Abhisheklips"><i > <FaGithub /> </i> </Link>
+                            
+                            <Link href="https://www.instagram.com/__abhishek_c_v/"><i > <FaInstagram/>  </i></Link>
+                            <Link href="https://www.linkedin.com/in/abhishek-c-v/"><i > <FaLinkedinIn /> </i></Link>
+                            <Link href="https://www.youtube.com/@geekcv625"><i > <FaYoutube />  </i></Link>
                         </div>
                     </div>
                     <div className={footerStyles['link-boxes']}>
@@ -66,7 +69,7 @@ const Footer = () => {
                 <div className={footerStyles['bottom-details']}>
                     <div className={footerStyles.bottom_text}>
                         <span className={footerStyles.copyright_text}> Copyright © 2023
-                            <Link href="/>"> Thapa Technical.</Link> All rights reserved </span>
+                            <Link href="https://geekcvtech.blogspot.com/?m=1"> Geek CV </Link> All rights reserved </span>
                         <span className={footerStyles.policy_terms}>
                           <Link href="/">Privacy policy</Link>
                           <Link href="/">Terms & condition</Link>
