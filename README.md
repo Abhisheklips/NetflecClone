@@ -1,12 +1,17 @@
-live project click below
+live project click 
 https://geekcvnet.vercel.app/
 
 ## Getting Started
 
 First, run the development server:
 
+delete this file pnpm-lock.yaml
+Next steps below
+
 ```bash
 npm i pnpm
+
+pnpm i
 
 pnpm  run dev
 ```
